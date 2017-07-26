@@ -1,6 +1,156 @@
-html, body {
+html {
   font-size: 18px;
   font-family: Helvetica;
   color: white;
+}
+
+.container {
   width: 960px;
+  margin: 0 auto;
+}
+
+
+/* --Corporate Banner Styling -- */
+header {
+  background-color: black;
+  width: 100%;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+}
+
+.banner img {
+  padding-left: 0.5rem;
+  height: 1.5rem;
+}
+
+.banner span {
+  padding: 0.66rem 1rem;
+  font-size: 1rem;
+}
+
+
+/* --Featured Section Main Splash Styling -- */
+main {
+  background-image: url("../images/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+}
+
+.feature {
+  background-color: black;
+  width: 20rem;
+  position: relative;
+  top: 9rem;
+  padding: 2rem 3rem;
+}
+
+.feature h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: 0.25rem;
+}
+
+.feature h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+
+/* --Main Nav Bar Styling -- */
+nav {
+  background-color: firebrick;
+  width: 100%;
+  padding: 0.75rem 0rem;
+}
+
+.desktop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tablet, .mobile {
+  display: none;
+}
+
+
+
+/* --Store Area Styling -- */
+
+
+
+
+/* --Footer Styling -- */
+footer {
+  background-color: black;
+  width: 100%;
+}
+
+.footer_bar{
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+/* --Media Queries for Tablet Size -- */
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .tablet, .mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
+
+/* --MMedia Queries for Mobile Size -- */
+@media only screen and (max-width: 420px) {
+  main {
+    height: 15rem;
+  }
+
+  .feature {
+    width: auto;
+    top: 10rem;
+    padding: 1rem 2rem;
+  }
+
+  .feature h3 {
+    font-size: 0.77rem;
+  }
+
+  .feature h1 {
+    font-size: 1rem;
+  }
+
+  .footer_bar {
+    justify-content: center;
+  }
 }
