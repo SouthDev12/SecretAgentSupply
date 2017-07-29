@@ -94,10 +94,12 @@ nav {
   border: 4px solid black;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .item img {
   height: 9rem;
+  width: 9rem;
   padding: 2rem;
 }
 
@@ -108,6 +110,7 @@ nav {
   align-items: center;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  width: 100%;
 }
 
 .info {
@@ -161,6 +164,14 @@ footer {
     align-items: center;
     justify-content: center;
   }
+
+  .item {
+    width: 47%;
+  }
+
+  #thermal {
+    display: none;
+  }
 }
 
 
@@ -188,6 +199,25 @@ footer {
 
   .feature h1 {
     font-size: 1rem;
+  }
+
+  .row {
+    margin-bottom: 3rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item {
+    width: 90%;
+  }
+
+  .info {
+    width: 90%;
+    margin-bottom: 0.5rem;
+  }
+
+  #watch {
+    display: none;
   }
 
   .footer_bar {
